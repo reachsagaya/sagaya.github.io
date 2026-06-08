@@ -1,203 +1,765 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Sagayamary Sagayaradj</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SagayaMary Sagayaradj, Ph.D.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  :root {
+    --teal: #0F6E56;
+    --teal-light: #E1F5EE;
+    --teal-mid: #1D9E75;
+    --sand: #F7F5F0;
+    --dark: #1C1C1A;
+    --muted: #6B6B66;
+    --border: #DDD9D0;
+    --white: #ffffff;
+  }
 
-				<!-- Intro -->
-					<div id="intro">
-						<img src="images/Sagaya.jpg" alt="Sagaya" width="300" height="350">
-						<h1>My Portfolio</h1>
-						<p>Passionate towards Science and technology
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--sand);
+    color: var(--dark);
+    font-size: 15px;
+    line-height: 1.7;
+  }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Sagayamary</a>
-					</header>
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    z-index: 100;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+  }
+  nav .brand {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--teal);
+    letter-spacing: 0.01em;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: var(--teal); }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Research work</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+  /* LAYOUT */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
 
-				<!-- Main -->
-					<div id="main">
+  section {
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  section:last-child { border-bottom: none; }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="#">Comparative genomics<br />
-									Lettuce pangenome</a></h2>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
-								</ul>
-							</article>
+  h2.section-title {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--teal);
+    display: inline-block;
+  }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">September 29, 2018</span>
-										<h2><a href=>
-										High Quality reference assemblies</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Methods</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">June 22, 2019</span>
-										<h2><a href="#">Genome Annotation<br />
-										??</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">METHODS</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 18, 2021</span>
-										<h2><a href="#">Structural Variant<br />
-										discovery</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Methods</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">March, 14, 2018</span>
-										<h2><a href="#">Lab Matters<br />
-										Dr. Michelmore Lab</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-							</section>
+  /* HERO */
+  #about {
+    padding: 5rem 0 4rem;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  .avatar-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid var(--teal-light);
+    flex-shrink: 0;
+    overflow: hidden;
+    background: var(--teal-light);
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .social-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 12px;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 6px;
+    transition: background 0.15s, color 0.15s;
+  }
+  .social-links a:hover { background: var(--teal-light); color: var(--teal); }
+  .social-links svg { width: 14px; height: 14px; flex-shrink: 0; }
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
+  .about-text h1 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: var(--dark);
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+  }
+  .about-text .subtitle {
+    font-size: 1rem;
+    color: var(--teal);
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+  }
+  .about-text .affil {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+  }
+  .bio {
+    font-size: 0.95rem;
+    color: var(--dark);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+  }
 
-					</div>
+  .interests-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .tag {
+    background: var(--teal-light);
+    color: var(--teal);
+    border-radius: 20px;
+    padding: 3px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #9FE1CB;
+  }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Genome and Biomedical Sciences Facility<br />
-								451 Health Sciences Drive, 
-								University of California - Davis CA 95616-8816</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(510) 449-1711</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">ssagayaradj@ucdavis.edu</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+  .cta-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.15s;
+    border: 1.5px solid;
+  }
+  .btn-primary {
+    background: var(--teal);
+    color: white;
+    border-color: var(--teal);
+  }
+  .btn-primary:hover { background: #0F5C47; }
+  .btn-outline {
+    background: transparent;
+    color: var(--teal);
+    border-color: var(--teal);
+  }
+  .btn-outline:hover { background: var(--teal-light); }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Sagayamary</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+  /* PUBLICATIONS */
+  .pub-list { display: flex; flex-direction: column; gap: 1.5rem; }
+  .pub-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    border-left: 4px solid var(--teal-mid);
+  }
+  .pub-item:hover {
+    border-color: var(--teal-mid);
+    box-shadow: 0 2px 12px rgba(15, 110, 86, 0.08);
+  }
+  .pub-title {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+  }
+  .pub-authors {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.25rem;
+  }
+  .pub-authors strong { color: var(--dark); }
+  .pub-venue {
+    font-size: 0.85rem;
+    color: var(--teal);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  .pub-links { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .pub-link {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    text-decoration: none;
+    transition: all 0.15s;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .pub-link:hover { border-color: var(--teal); color: var(--teal); background: var(--teal-light); }
 
-			</div>
+  /* EXPERIENCE */
+  .timeline { display: flex; flex-direction: column; gap: 0; }
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+  }
+  .timeline-item:last-child { border-bottom: none; }
+  .timeline-date {
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 500;
+    padding-top: 2px;
+  }
+  .timeline-content h3 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 0.1rem;
+  }
+  .timeline-content .org {
+    font-size: 0.9rem;
+    color: var(--teal);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  .timeline-content ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .timeline-content ul li {
+    font-size: 0.88rem;
+    color: var(--muted);
+    padding-left: 1rem;
+    position: relative;
+    line-height: 1.6;
+  }
+  .timeline-content ul li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: var(--teal-mid);
+  }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  /* EDUCATION */
+  .edu-list { display: flex; flex-direction: column; gap: 1.25rem; }
+  .edu-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .edu-item:last-child { border-bottom: none; }
+  .edu-year { font-size: 13px; color: var(--muted); font-weight: 500; }
+  .edu-content h3 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.15rem;
+  }
+  .edu-content .inst { font-size: 0.88rem; color: var(--teal); font-weight: 500; }
+  .edu-content .thesis {
+    font-size: 0.84rem;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: 0.3rem;
+  }
 
-	</body>
+  /* SKILLS */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .skill-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+  }
+  .skill-card h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--teal);
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+  }
+  .skill-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+
+  /* AWARDS */
+  .award-list { display: flex; flex-direction: column; gap: 0.8rem; }
+  .award-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 0.9rem 1.1rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  .award-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--teal-light);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--teal);
+    font-size: 15px;
+  }
+  .award-text { font-size: 0.9rem; color: var(--dark); line-height: 1.6; }
+  .award-text span { font-size: 0.82rem; color: var(--muted); display: block; }
+
+  /* CONTACT */
+  #contact { background: var(--white); }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .contact-info a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+    transition: color 0.15s;
+  }
+  .contact-info a:hover { color: var(--teal); }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 12px;
+    color: var(--muted);
+    background: var(--white);
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 680px) {
+    .about-grid { grid-template-columns: 1fr; }
+    .avatar-wrap { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
+    .timeline-item, .edu-item { grid-template-columns: 1fr; gap: 0.25rem; }
+    .contact-grid { grid-template-columns: 1fr; }
+    nav ul { gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="brand">SagayaMary Sagayaradj</span>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="avatar-wrap">
+        <div class="avatar"><img src="Sagaya.jpg" alt="SagayaMary Sagayaradj"></div>
+        <div class="social-links">
+          <a href="mailto:reachsagaya@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            reachsagaya@gmail.com
+          </a>
+          <a href="https://github.com/reachsagaya" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            reachsagaya
+          </a>
+          <a href="https://www.linkedin.com/in/sagayamary-sagayaradj-phd-a8174526/" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://scholar.google.com/scholar?q=sagayamary+sagayaradj" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg>
+            Google Scholar
+          </a>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <h1>SagayaMary Sagayaradj</h1>
+        <p class="subtitle">Scientist, Computational Genomics &amp; Bioinformatics</p>
+        <p class="affil">BASF, Division of Research Technology · Davis, CA</p>
+
+        <p class="bio">
+          Results-driven computational scientist with 15+ years of experience designing, developing, and managing large-scale data systems, bioinformatic pipelines, and computational platforms in regulated research and enterprise environments. My work spans pangenome construction, structural variant discovery, <em>de novo</em> genome assembly, and interactive data visualization — with a focus on translating complex genomic data into actionable insights for plant breeding and crop improvement.
+        </p>
+
+        <div class="interests-grid">
+          <span class="tag">Pangenomics</span>
+          <span class="tag">Structural Variation</span>
+          <span class="tag">Genome Assembly</span>
+          <span class="tag">HPC Pipelines</span>
+          <span class="tag">Plant Genomics</span>
+          <span class="tag">Graph Databases</span>
+          <span class="tag">NGS Analysis</span>
+          <span class="tag">Data Visualization</span>
+        </div>
+
+        <div class="cta-links">
+          <a class="btn btn-primary" href="SSagaya_CV_2026_Technical.docx" download>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+          <a class="btn btn-outline" href="https://scholar.google.com/scholar?q=sagayamary+sagayaradj" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            View Publications
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="container">
+    <h2 class="section-title">Publications</h2>
+    <div class="pub-list">
+
+      <div class="pub-item">
+        <div class="pub-title">Generation and analysis of a telomere-to-telomere reference assembly and pangenome of lettuce (<em>Lactuca</em> spp.) with reference to repertoires of disease resistance genes</div>
+        <div class="pub-authors"><strong>Sagayaradj, S.</strong> — Advisor: Michelmore, R.</div>
+        <div class="pub-venue">Ph.D. Dissertation, University of California, Davis · 2022</div>
+        <div class="pub-links">
+          <a class="pub-link" href="https://escholarship.org/uc/item/8395p3hn" target="_blank">eScholarship</a>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">A strategy for building and using a human reference pangenome</div>
+        <div class="pub-authors">Paten, B., Busby, B., …, Musunuri, R. L., <strong>Sagayaradj, S.</strong>, Novak, A. M., et al.</div>
+        <div class="pub-venue">F1000Research · 2019 · doi:10.12688/F1000RESEARCH.19630.1</div>
+        <div class="pub-links">
+          <a class="pub-link" href="https://f1000research.com/articles/8-1751" target="_blank">F1000Research</a>
+          <a class="pub-link" href="https://scholar.google.com/scholar?q=sagayamary+sagayaradj" target="_blank">Google Scholar</a>
+        </div>
+      </div>
+
+    </div>
+    <p style="margin-top:1.5rem; font-size:0.88rem; color:var(--muted);">
+      For a full list of publications, see
+      <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=sagayamary+sagayaradj" target="_blank" style="color:var(--teal); text-decoration:none;">Google Scholar</a>.
+    </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-date">2018 – present</div>
+        <div class="timeline-content">
+          <h3>Scientist — Computational Biology (Research Technology)</h3>
+          <div class="org">BASF · Davis, CA</div>
+          <ul>
+            <li>Architected and maintained enterprise-scale bioinformatic pipelines and graph-based pan-genome databases on HPC cluster systems, supporting data-driven decision-making across global R&amp;D teams.</li>
+            <li>Developed interactive data visualization platforms in R and Python, enabling non-technical stakeholders to explore large-scale genomic datasets independently.</li>
+            <li>Led the design and deployment of reproducible, version-controlled computational workflows (Nextflow, Singularity, Git, Docker) for <em>de novo</em> genome assembly and annotation.</li>
+            <li>Managed IT components of multiple international consortium projects, including a $4.8M lettuce genome initiative.</li>
+            <li>Mentored technical staff in NGS data analysis, pipeline development, and best practices for data management.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2018</div>
+        <div class="timeline-content">
+          <h3>Scientist — Microbial Genomics (Short-term Assignment)</h3>
+          <div class="org">Bayer · West Sacramento, CA</div>
+          <ul>
+            <li>Established NGS-based high-throughput screening infrastructure and trained the microbial team on new computational workflows for biocontrol research.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2010 – 2017</div>
+        <div class="timeline-content">
+          <h3>Scientist — Genomics / Bioinformatics</h3>
+          <div class="org">Bayer · West Sacramento, CA</div>
+          <ul>
+            <li>Built and standardized enterprise genomics platforms — including pipelines, databases, and LIMS systems — improving data governance and research reproducibility across global sites.</li>
+            <li>Directed large-scale NGS variant discovery workflows (GATK/FreeBayes), delivering scalable, decision-ready datasets to R&amp;D and breeding stakeholders.</li>
+            <li>Led cross-functional IT and science initiatives, communicating complex technical strategies to diverse stakeholders including scientists, breeders, and program managers.</li>
+            <li>Executed end-to-end NGS-based TILLING programs from wet-lab data generation through computational analysis and reporting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2008 – 2010</div>
+        <div class="timeline-content">
+          <h3>Research Assistant — Molecular Assisted Breeding</h3>
+          <div class="org">Bayer · West Sacramento, CA</div>
+          <ul>
+            <li>Managed and analyzed large-scale datasets from WGRS, GBS, Infinium array, and RNA-seq projects; integrated in-house databases for novel SNP discovery and trait analysis.</li>
+            <li>Conducted bioinformatics projects for trait discovery using QTL mapping, candidate gene discovery, and germplasm characterization for diversity.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2008</div>
+        <div class="timeline-content">
+          <h3>Research Associate — Department of Plant Biology</h3>
+          <div class="org">Carnegie Institution at Stanford University · Palo Alto, CA</div>
+          <ul>
+            <li>Performed gene cloning, expression analysis, and yeast two-hybrid experiments to study abiotic stress-related genes and protein interaction networks in Arabidopsis.</li>
+            <li>Supported systems-level biological research through data mining and curation as part of AraNet development.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2005 – 2008</div>
+        <div class="timeline-content">
+          <h3>Graduate Research Assistant</h3>
+          <div class="org">University of California, Davis · Davis, CA</div>
+          <ul>
+            <li>Led microarray research to identify key transcription regulators driving aroma biosynthesis in apples; designed a custom 12K Combimatrix chip to study ethylene biosynthesis.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-list">
+
+      <div class="edu-item">
+        <div class="edu-year">2018 – 2022</div>
+        <div class="edu-content">
+          <h3>Ph.D. in Integrative Genetics and Genomics</h3>
+          <div class="inst">University of California, Davis</div>
+          <div class="thesis">Dissertation: Generation and analysis of a telomere-to-telomere reference assembly and pangenome of lettuce (<em>Lactuca</em> spp.) with reference to repertoires of disease resistance genes. Advisor: Prof. Richard Michelmore.</div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-year">2005 – 2008</div>
+        <div class="edu-content">
+          <h3>M.S. in Horticulture and Agronomy</h3>
+          <div class="inst">University of California, Davis</div>
+          <div class="thesis">Dissertation: Microarray-based Research for Identification of Significant Transcription Regulators Mediating Aroma Biosynthesis in Apple. Advisor: Prof. Abhaya Dandekar.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Skills -->
+    <h2 class="section-title" style="margin-top:3rem;">Core Competencies</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h4>Programming &amp; Scripting</h4>
+        <p>Python, R, JavaScript, Bash/Shell, Linux/Unix</p>
+      </div>
+      <div class="skill-card">
+        <h4>Systems &amp; Infrastructure</h4>
+        <p>HPC Cluster Administration, Cloud Computing, Docker, Singularity, LIMS</p>
+      </div>
+      <div class="skill-card">
+        <h4>Databases &amp; Data Management</h4>
+        <p>Graph Databases (Pangenome), Relational Databases, Large-scale NGS Data</p>
+      </div>
+      <div class="skill-card">
+        <h4>DevOps &amp; Collaboration</h4>
+        <p>Git, Bamboo, JIRA, Confluence, SharePoint, Nextflow, Snakemake</p>
+      </div>
+      <div class="skill-card">
+        <h4>Data Analysis &amp; Visualization</h4>
+        <p>Statistical analysis, interactive dashboards, GWAS visualization, SAS</p>
+      </div>
+      <div class="skill-card">
+        <h4>Project &amp; IT Governance</h4>
+        <p>Agile/Scrum, budget management, IP/regulatory compliance</p>
+      </div>
+    </div>
+
+    <!-- Awards -->
+    <h2 class="section-title" style="margin-top:3rem;">Awards, Grants &amp; Patents</h2>
+    <div class="award-list">
+      <div class="award-item">
+        <div class="award-icon">🏆</div>
+        <div class="award-text">
+          Scientific Lead, International Lettuce Genome Consortium
+          <span>$4.8M grant · 2020</span>
+        </div>
+      </div>
+      <div class="award-item">
+        <div class="award-icon">🎓</div>
+        <div class="award-text">
+          Industry-sponsored Ph.D. Fellowship, Bayer Crop Sciences
+          <span>$200K fellowship · 2018–2022</span>
+        </div>
+      </div>
+      <div class="award-item">
+        <div class="award-icon">📄</div>
+        <div class="award-text">
+          U.S. Patent: Tomato plants with non-transgenic DMR6 gene alterations
+          <span>BCS16-8012US · 2017</span>
+        </div>
+      </div>
+      <div class="award-item">
+        <div class="award-icon">📄</div>
+        <div class="award-text">
+          U.S. Patent (Pending): Melon plants with WMV resistance mutation
+          <span>63/938203 · 2025</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <a href="mailto:reachsagaya@gmail.com">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          reachsagaya@gmail.com
+        </a>
+        <a href="tel:5104491711">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 12 19.79 19.79 0 01.21 3.38 2 2 0 012.18 1.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.37A16 16 0 0015.63 17.09l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          510-449-1711
+        </a>
+        <a href="https://github.com/reachsagaya" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          github.com/reachsagaya
+        </a>
+        <a href="https://www.linkedin.com/in/sagayamary-sagayaradj-phd-a8174526/" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn Profile
+        </a>
+        <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=sagayamary+sagayaradj" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg>
+          Google Scholar
+        </a>
+      </div>
+      <div>
+        <p style="font-size:0.9rem; color:var(--muted); line-height:1.8;">
+          I am open to collaborations in computational genomics, pangenome research, and bioinformatics pipeline development. Feel free to reach out via email or connect on LinkedIn.
+        </p>
+        <p style="margin-top:1rem; font-size:0.9rem; color:var(--muted);">
+          <strong style="color:var(--dark);">Location:</strong> Davis / Sacramento, California, USA
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>SagayaMary Sagayaradj, Ph.D. &nbsp;·&nbsp; Scientist, Computational Genomics &nbsp;·&nbsp;
+     <a href="https://github.com/sagaya/sagaya.github.io" target="_blank" style="color:var(--teal);text-decoration:none;">sagaya/sagaya.github.io</a>
+  </p>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const el = document.querySelector(a.getAttribute('href'));
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+</body>
 </html>
